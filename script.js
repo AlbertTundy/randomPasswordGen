@@ -12,7 +12,6 @@ function randomize(array){
 //prompt for user choices. 
 function userPrompt (){
 var passwordLength = parseInt(prompt ("How long would you like your password?"))
-console.log (passwordLength)
 if (passwordLength < 9) 
 {alert("Password must be at least 9 characters")
 return
@@ -33,7 +32,6 @@ capitalChosenCharacters: hasCapitalCharacters,
 LowerChosenCharacters: hasLowerCharacter,
 numberChosenCharacters: hasNumberCharacters
 }
-console.log(userChoices)
 return userChoices
 }
 // created a function to determine the total number of character available for the password based on the boolean answers earlier. 
@@ -66,7 +64,6 @@ function generatePassword(){
     var possible = randomize(possibleCharacters)
     newPassword.push(possible)
   }
-console.log(newPassword.join(""))
 return newPassword.join("")
 }
 // This is the function that makes the password viewable outside of the console.
